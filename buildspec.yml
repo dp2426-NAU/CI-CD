@@ -10,9 +10,10 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - echo Running tests (if any)...
+      - echo "Running tests (if any)..."   # Parentheses now quoted
       # If you have tests, run them; otherwise skip
       # - npm test
+
 artifacts:
   files:
     - '**/*'

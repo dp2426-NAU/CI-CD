@@ -1,0 +1,26 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Installing dependencies..."
+      - npm install
+
+  build:
+    commands:
+      - echo "Building the project..."
+      # Optional: add npm run build if you have a build script
+      # - npm run build
+
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
+      # Optional: run tests
+      # - npm test
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
